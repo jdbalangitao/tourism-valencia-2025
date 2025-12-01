@@ -1,0 +1,214 @@
+body {
+    background-image: url(../images/clubhouse-tierra-alta-blurred.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+.about-valencia-content {
+    background-color: rgba(243, 243, 243, 0.7);
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.valencia-seal {
+    height: 40px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.valencia-seal:hover {
+    transform: scale(1.1);
+    transition: transform 150ms ease;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-nav .nav-link {
+    color: #1e1e1e;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    transition: background-color 150ms ease, color 150ms ease, transform 80ms ease;
+    text-decoration: none;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(2) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(2) .nav-link.active {
+    background-color: #0038A8;
+}
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(3) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(3) .nav-link.active {
+    background-color: #CE1126;
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(4) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(4) .nav-link.active {
+    background-color: #0038A8;
+}
+.navbar-nav .nav-item:nth-child(5) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(5) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(5) .nav-link.active {
+    background-color: #CE1126;
+}
+.navbar-nav .nav-item:nth-child(6) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(6) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(6) .nav-link.active {
+    background-color: #0038A8;
+}
+.navbar-nav .nav-item:nth-child(7) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(7) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(7) .nav-link.active {
+    background-color: #CE1126;
+}
+.navbar-nav .nav-item:nth-child(8) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(8) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(8) .nav-link.active {
+    background-color: #0038A8;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.about-valencia-content h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.about-valencia-content p {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    line-height: 1.5;
+}
+
+.carousel {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.carousel .carousel-inner {
+    border-radius: 20px; 
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: auto;
+        object-fit: contain;
+    }
+    .valencia-summary, .valencia-history, .valencia-geography {
+        padding: 1rem;
+    }
+}
+
+.barangay-list h3 {
+    text-align: center;
+}
+
+.barangay-columns {
+    column-gap: 2rem;
+    -webkit-column-gap: 2rem;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    padding-left: 0;
+}
+
+@media (min-width: 992px) {
+    .barangay-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .barangay-columns {
+        column-count: 2;
+    }
+}
+
+html, body { overflow-x: hidden; }
+
+@media (max-width: 575.98px) {
+    .barangay-columns {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .valencia-summary .row,
+    .valencia-history .row,
+    .valencia-geography .row,
+    .valencia-economy .row {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.75rem;
+    }
+
+    .valencia-summary .col,
+    .valencia-history .col,
+    .valencia-geography .col,
+     .valencia-economy .col {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0.25rem !important;
+        padding-right: 0.25rem !important;
+    }
+
+    .about-valencia-content img.img-fluid {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 44vh !important;
+        object-fit: contain !important;
+        object-position: center !important;
+    }
+
+    .valencia-history .col:first-child { order: 2 !important; }
+    .valencia-history .col:last-child  { order: 1 !important; }
+
+    .about-valencia-content { padding: 0.5rem !important; }
+    .valencia-summary, .valencia-history, .valencia-geography, .valencia-economy { padding: 0.5rem !important; }
+    .about-valencia-content p { font-size: 0.95rem !important; }
+    .about-valencia-content h2 { font-size: 1.1rem !important; }
+}
+
+.barangay-columns li {
+    display: block;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+/*copy and paste para sa button style*/
+.btn-primary, .btn {
+    background-color: #0038A8 !important;
+    border-color: #0038A8 !important;
+    border-radius: 30px !important;
+    padding: 0.5rem 4rem !important;
+}
+
+/*copy and paste para sa button style*/
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #002A75 !important;
+    border-color: #002A75 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+}

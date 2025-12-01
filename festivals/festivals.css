@@ -1,0 +1,145 @@
+body {
+    background-image: url(../images/clubhouse-tierra-alta-blurred.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn-primary, .btn {
+    background-color: #CE1126 !important;
+    border-color: #CE1126 !important;
+    border-radius: 30px !important;
+    padding: 0.5rem 4rem !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #9B1B1B !important;
+    border-color: #9B1B1B !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+}
+
+.festivals {
+    background-color: rgba(243, 243, 243, 0.7);
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.valencia-seal {
+    height: 40px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.valencia-seal:hover {
+    transform: scale(1.1);
+    transition: transform 150ms ease;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-nav .nav-link {
+    color: #1e1e1e;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    transition: background-color 150ms ease, color 150ms ease, transform 80ms ease;
+    text-decoration: none;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(2) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(2) .nav-link.active {
+    background-color: #0038A8;
+}
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(3) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(3) .nav-link.active {
+    background-color: #CE1126;
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(4) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(4) .nav-link.active {
+    background-color: #0038A8;
+}
+.navbar-nav .nav-item:nth-child(5) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(5) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(5) .nav-link.active {
+    background-color: #CE1126;
+}
+.navbar-nav .nav-item:nth-child(6) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(6) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(6) .nav-link.active {
+    background-color: #0038A8;
+}
+.navbar-nav .nav-item:nth-child(7) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(7) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(7) .nav-link.active {
+    background-color: #CE1126;
+}
+.navbar-nav .nav-item:nth-child(8) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(8) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(8) .nav-link.active {
+    background-color: #0038A8;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel {
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+    max-height: 500px;
+}
+.carousel .carousel-inner {
+    border-radius: 20px; 
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: auto;
+        object-fit: contain;
+    }
+    .rambones-festival, .puhag-festival {
+        padding: 1rem;
+        height: auto;
+    }
+}
+
+.rambones-festival h2, .puhag-festival h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.rambones-festival p, .puhag-festival p {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    line-height: 1.5;
+}

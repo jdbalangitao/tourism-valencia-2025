@@ -1,0 +1,152 @@
+body {
+    background-image: url(images/clubhouse-tierra-alta-blurred.png);
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+/*copy and paste para sa button style*/
+.btn-primary, .btn {
+    background-color: #2e2e2e !important;
+    border-color: #2e2e2e !important;
+    border-radius: 30px !important;
+    padding: 0.5rem 4rem !important;
+}
+
+/*copy and paste para sa button style*/
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #002A75 !important;
+    border-color: #002A75 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+}
+
+/*copy and paste para sa seal style*/
+.valencia-seal {
+    height: 40px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+/*copy and paste para sa seal style*/
+.valencia-seal:hover {
+    transform: scale(1.1);
+    transition: transform 150ms ease;
+}
+
+/* Navbar custom styles: semi-transparent bar and centered, evenly spaced links */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Base link appearance (pill-ready) */
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-nav .nav-link {
+    color: #1e1e1e;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    transition: background-color 150ms ease, color 150ms ease, transform 80ms ease;
+    text-decoration: none;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+/* Alternating pill hover / active backgrounds
+   Start from About Valencia as first item (nth-child(1))
+   Odd items: primary #0038A8, Even items: secondary #CE1126 */
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(2) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(2) .nav-link.active {
+    background-color: #0038A8;
+}
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(3) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(3) .nav-link.active {
+    background-color: #CE1126;
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(4) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(4) .nav-link.active {
+    background-color: #0038A8;
+}
+.navbar-nav .nav-item:nth-child(5) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(5) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(5) .nav-link.active {
+    background-color: #CE1126;
+}
+.navbar-nav .nav-item:nth-child(6) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(6) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(6) .nav-link.active {
+    background-color: #0038A8;
+}
+.navbar-nav .nav-item:nth-child(7) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(7) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(7) .nav-link.active {
+    background-color: #CE1126;
+}
+.navbar-nav .nav-item:nth-child(8) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(8) .nav-link:focus,
+.navbar-nav .nav-item:nth-child(8) .nav-link.active {
+    background-color: #0038A8;
+}
+
+.homepage-section {
+    background-color: rgba(243, 243, 243, 0.7);
+    padding: 2rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Section: ensure heading/paragraph responsive layout */
+.homepage-section h1 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+.homepage-section p {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    line-height: 1.5;
+}
+
+/* Carousel: full-width below the paragraph; responsive image behavior */
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Container-level rounding: ensures images and controls are clipped to rounded corners */
+.carousel {
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden; /* clip overflowing child elements (images, controls) */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.carousel .carousel-inner {
+    border-radius: 20px; /* safe-guard for some browsers */
+}
+
+@media (max-width: 768px) {
+    /* On small screens make carousel images scale by width (no crop) */
+    .carousel-item img {
+        height: auto;
+        object-fit: contain;
+    }
+    .homepage-section {
+        padding: 1rem;
+        height: auto;
+    }
+}
+
+
+
